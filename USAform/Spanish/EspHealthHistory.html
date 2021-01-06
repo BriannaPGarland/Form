@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+
+<html>
+    <head>
+        <script src='engCopyjs'></script>
+        <link rel ='stylesheet' href = './Style Files/usaStyels.css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <h1 id = 'FormTitle'>Grail Health Record</h1>
+
+        <ul>
+            <li><a href ='HealthHistory.html'>Health History</a></li>
+        </ul>
+
+
+        <div id= 'InitialPage'>
+            <h2 id='pInfo'>Health Information:</h2>
+            <form>
+                <div id='Name'>
+                <label class = 'pinfoLable' for ='firstName'>First Name</label>
+                 <input class = 'pinfoInput'type= 'text' id= 'firstName'><br>
+                <label for ='lastName'>Last Name</label>
+                <input type= 'text' id= 'lastName'><br>
+                <label for ='middleInitial'>Middle Initial</label>
+                <input type= 'text' id= 'lastName'><br>
+                </div>
+
+                <br> 
+                
+                <div id='Gender'>
+                    <label>Current Gender:</label><br>
+                    <input  type="radio" id="current" name="current" value="female">
+                    <label for="current"> Female</label>
+                    <input  type="radio" id="current" name="current" value="male">
+                    <label for="current"> Male</label>
+                    <input  type="radio" id="current" name="current" value="other">
+                    <label for="current"> Other</label>
+                    <input  type="radio" id="current" name="current" value="nondisclose">
+                    <label for="current"> I do not wish to answer</label>
+                </div>
+                
+                <br>
+
+                <div>
+                    <label for ='identification'>Social Security Number</label>
+                    <input type= 'text' id= 'identification'><br>
+                </div>
+
+                <div id='ContactInfo'>
+                    <h4>Contact Information:</h4>
+                    <label for ='phone'>Primary Phone Number</label>
+                    <input type= 'text' id= 'phone'>
+                    <label for ='email'>Primary Email</label>
+                    <input type= 'text' id= 'email'><br>
+                </div>
+
+                <br>
+
+                <div id='UsAddress'>
+                    <h4>Current Address:</h4>
+                    <label for ='streetAddr'>Street Address</label>
+                    <input type= 'text' id= 'streetAddr'><br>
+                    <label for ='town'>Town/City</label>
+                    <input type= 'text' id= 'town'><br>
+                    <label for ='state'>State</label>
+                    <input type= 'text' id= 'state'><br>
+                    <label for ='zipcode'>Zipcode</label>
+                    <input type= 'text' id= 'zipcode'><br>
+                </p>
+            </form>
+            <form action='HealthHistory.html'>
+                <input type = 'submit' value = 'Next' id = 'nextButton'>
+            </form>
+        </div>
+    </body>
+</html>

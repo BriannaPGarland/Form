@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+
+<html>
+    <head>
+        <script src='engCopyjs'></script>
+        <link rel ='stylesheet' href = './Style Files/spaStyles.css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <h1 id = 'FormTitle'>Registro de Salud de Grail</h1>
+
+        <ul>
+            <li><a href ='HealthHistory.html'>Historia de Salud</a></li>
+        </ul>
+
+
+        <div id= 'InitialPage'>
+            <h2 id='pInfo'>Informacion Personal:</h2>
+            <form>
+                <div id='Name'>
+                <label class = 'pinfoLable' for ='firstName'>Primer Nombre</label>
+                 <input class = 'pinfoInput'type= 'text' id= 'firstName'><br>
+                <label for ='lastName'>Apellido</label>
+                <input type= 'text' id= 'lastName'><br>
+                <label for ='middleInitial'>Inicial del Segundo Nombre</label>
+                <input type= 'text' id= 'middleName'><br>
+                </div>
+
+                <br> 
+                
+                <div id='Gender'>
+                    <label>Género actual:</label><br>
+                    <input  type="radio" id="current" name="current" value="female">
+                    <label for="current"> Mujer</label>
+                    <input  type="radio" id="current" name="current" value="male">
+                    <label for="current"> Macho</label>
+                    <input  type="radio" id="current" name="current" value="other">
+                    <label for="current"> Otra</label>
+                    <input  type="radio" id="current" name="current" value="nondisclose">
+                    <label for="current"> Yo no quiero contestar</label>
+                </div>
+                
+                <br>
+
+                <div>
+                    <label for ='identification'>Número de seguridad social</label>
+                    <input type= 'text' id= 'identification'><br>
+                </div>
+
+                <div id='ContactInfo'>
+                    <h4>Información del contacto:</h4>
+                    <label for ='phone'> Número de teléfono primario</label>
+                    <input type= 'text' id= 'phone'>
+                    <label for ='email'>Correo electrónico</label>
+                    <input type= 'text' id= 'email'><br>
+                </div>
+
+                <br>
+
+                <div id='UsAddress'>
+                    <h4>Direccion actual:</h4>
+                    <label for ='streetAddr'>Dirección</label>
+                    <input type= 'text' id= 'streetAddr'><br>
+                    <label for ='town'>Ciudad</label>
+                    <input type= 'text' id= 'town'><br>
+                    <label for ='state'>Estado</label>
+                    <input type= 'text' id= 'state'><br>
+                    <label for ='zipcode'>Código postal</label>
+                    <input type= 'text' id= 'zipcode'><br>
+                </p>
+            </form>
+            <form action='HealthHistory.html'>
+                <input type = 'submit' value = 'Siguiente' id = 'nextButton'>
+            </form>
+        </div>
+    </body>
+</html>
