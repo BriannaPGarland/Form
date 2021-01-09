@@ -1,8 +1,9 @@
-
 body {
     background-color: cadetblue;
     font-family: 'Montserrat', sans-serif;
-    margin: 35px;
+    margin-top: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 
@@ -19,6 +20,7 @@ body {
 #pInfo {
     color: rgb(63, 62, 62);
     text-align: center;
+    margin: 15px;
     font-weight: bolder;
     text-shadow: 0px 1px 1px rgb(63, 62, 62);
     
@@ -44,7 +46,7 @@ div.p.firstName{
 }
 #nextButton {
   height: 50px;
-  width: 130px;
+  width: 90px;
   margin-top: 15px;
   position: relative;
   overflow: hidden;
@@ -58,4 +60,57 @@ div.p.firstName{
   font-size: 1rem;
   letter-spacing: .20rem;
   transition: all .5s;
+}
+
+
+#nav{
+  font-size: 12px;
+  height: 35px;
+  width: 240px;
+  margin-top: 15px;
+ 
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  float:right;
+  background-color: whitesmoke;
+  border-color: rgba(3, 160, 160, 0.904);
+  color:  rgb(78, 131, 133);
+  letter-spacing: .20rem;
+  transition: all .5s;
+  text-align: center;
+  
+}
+
+nav:hover {
+  background-color: rgb(202, 201, 201);
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#langCh {
+  font-size: 7px;
+  height: 25px;
+  width: 150px;
+  margin-top: 15px;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: .45rem 0.75rem;
+  border-radius: 10rem;
+  float:right;
+  background-color:  rgb(63, 62, 62);
+  border-color: rgba(3, 160, 160, 0.904);
+  color:  whitesmoke;
+  letter-spacing: .20rem;
+  transition: all .5s;
+  text-align: center;
+  
 }
