@@ -46,6 +46,42 @@
 
         <div id= 'InitialPage'>
             <h2 id='pInfo'>Insurance:</h2>
+            <div id='Name'>
+                <label class = 'pinfoLable' for ='insuranceName'>Name of Insurance</label>
+                <select>
+                    <option selected disabled>Select Insurance Name</option>
+                    <option value = 'UnitedHealth'>UnitedHealth</option>
+                    <option value = 'Cigna Health'>Cigna Health</option>
+                </select><br><br>
+
+                <label for ='insuranceNumber'>Insurance Number</label>
+                <input type= 'text' id= 'insuranceNumber'><br><br>
+                <label for ='groupNumber'>Group Number</label>
+                <input type= 'text' id= 'lastName'><br><br>
+                <div id='upload'>
+                    <label for='img'>Upload an image of the FRONT of your insurance card</label><br>
+                    <input type="file"  name="img" accept="image/*" id ='insCard'><br>
+                    <label for='img'>Upload an image of the BACK of your insurance card</label><br>
+                    <input type="file" name="img" accept="image/*" id ='insCard'><br><br>
+                </div>
+                <h4 id='pInfo'>Policiy Holder Information</h4>
+                <label for ='policyHolder'>First & Last Name</label>
+                <input type= 'text' id= 'lastName'><br><br>
+                <label for ='relation'>Relation</label>
+                <select>
+                    <option selected disabled>Select Relation to Policy Holder</option>
+                    <option value = 'Parent'>Parent</option>
+                    <option value = 'Self'>Self</option>
+                    <option value = 'Spouse'>Spouse</option>
+                    <option value = 'Other'>Other</option>
+                </select><br><br>
+                <label for ='relation'>Phone Number </label>
+                <input type= 'text' id= 'phPhoneNum'><br><br>
+                
+
+            </div>
+           
+
             
         </div>
 

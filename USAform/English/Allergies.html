@@ -6,7 +6,22 @@
         <link rel ='stylesheet' href = './Style Files/usaStyels.css'>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            function dynInput(cbox) {
+            if (cbox.checked) {
+            var input = document.createElement("input");
+            input.type = "text";
+            var div = document.createElement("div");
+            div.id = cbox.name;
+            div.innerHTML = "What foods do you have allergies for?" ;
+            div.appendChild(input);
+            document.getElementById("insertinputs").appendChild(div);
+            } else {
+            document.getElementById(cbox.name).remove();
+            }
+        }
+        </script>
     </head>
     
     <body>
@@ -34,18 +49,61 @@
             <form action='Surgeries.html' >
                 <input type = 'submit' value = 'Surgeries' id = 'nav'>
             </form>
-
         </div>
-
         <br>
-        
         <h1 id = 'FormTitle'>Grail Health Record</h1>
-
         <br>
-
-
         <div id= 'InitialPage'>
             <h2 id='pInfo'>Allergies:</h2>
+            <div id='yesOrNo'>
+                <label>Do you have any allergies?</label><br>
+                <input  type="radio" id="current" name="current" value="yes">
+                <label for="current"> Yes</label>
+                <input  type="radio" id="current" name="current" value="no">
+                <label for="current"> No</label>
+            </div>
+            <h4 id='pInfo'>If selected YES, select your allergies:</h4>
+            <div id='optionsTable'>
+                <div id= 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="Nut" onClick ='dynInput(this);'>
+                    <label>Food Allergies:</label>
+                 </div>  
+                 <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="Metals">
+                    <label>Nickel/Metals</label>
+                </div>
+                <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="plants">
+                    <label>Flowers/Trees/Glasses</label>
+                </div>
+                <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="smells">
+                    <label>Perfume/Fregrance</label>
+                </div>
+                <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="latex">
+                    <label>Latex</label>
+                </div>
+                <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="bugs">
+                    <label>Insects</label>
+                </div>
+                <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="medicines">
+                    <label>Medicines</label>
+                </div>
+                <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="animals">
+                    <label>Animals</label>
+                </div>
+                <div id = 'checkOption'>
+                    <input  type="checkbox" id="current" name="current" value="dust">
+                    <label>Dust</label>
+                </div>
+            </div>
+            <br>
+            <p id="insertinputs"></p>
+            <br>
             
         </div>
 
