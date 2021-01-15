@@ -37,10 +37,15 @@ body {
   display: inline-flex;
   width: 100%;
   justify-content: center;
+  column-width: 200px;
+  column-gap: 40px;
+  column-count: 4;
+  
 }
+
 #checkOption {
   padding-right: 5px;
-  display:inline;
+  
 }
   
 label {

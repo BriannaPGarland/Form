@@ -7,6 +7,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            function dynInput(cbox) {
+            if (cbox.checked) {
+            var input = document.createElement("input");
+            input.type = "text";
+            var div = document.createElement("div");
+            div.id = cbox.name;
+            div.innerHTML = 'What surgeries, not listed, have you had?' ;
+            div.appendChild(input);
+            document.getElementById("insertinputs").appendChild(div);
+            } else {
+            document.getElementById(cbox.name).remove();
+            }
+        }
+        </script>
     </head>
     
     <body>
@@ -46,7 +61,134 @@
 
         <div id= 'InitialPage'>
             <h2 id='pInfo'>Surgeries:</h2>
-            
+            <div id='yesOrNo'>
+                <label>Have you had any surgeries in the past?</label><br>
+                <input  type="radio" id="current" name="current" value="yes">
+                <label for="current"> Yes</label>
+                <input  type="radio" id="current" name="current" value="no">
+                <label for="current"> No</label>
+            </div>
+            <h4 id='pInfo'>If selected YES, select the surgeries you have had:</h4>
+            <table id='optionsTable'>
+                <tr>
+                    <td id= 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value='amp'>
+                        <label>Amputation</label>
+                     </td>  
+                     <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="Graft">
+                        <label>AV Graft</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="avReplace">
+                        <label>Aortic Valve Replacement</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="append">
+                        <label>Appendectomy</label>
+                    </td>
+                </tr>
+               <tr>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="backSurg">
+                        <label>Back Surgery</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="Bronch">
+                        <label>Bronchoscopy</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="breastSurg">
+                        <label>Breast Surgery</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="cabg">
+                        <label>CABG</label>
+                    </td>
+               </tr>
+               <tr>
+                   <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="carpal">
+                        <label>Carpal Tunnel</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="cataractExt">
+                        <label>Cataract Extraction</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="cholesc">
+                        <label>Cholecystectomy</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="colonRese">
+                        <label>Colon Resection</label>
+                    </td>
+               </tr>
+               <tr>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="crain">
+                        <label>Craniotomy</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="gastric">
+                        <label>Gastric Bypass</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="hipRepl">
+                        <label>Hip Replacement</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="kneeRepl">
+                        <label>Knee Replacement</label>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="lumpectomy">
+                        <label>Lumpectomy</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="Mastectomy">
+                        <label>Mastectomy</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="pace">
+                        <label>Pacemaker</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="rotCuff">
+                        <label>Rotator Cuff Repair</label>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="tonsil">
+                        <label>Tonsillectomy</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="uppp">
+                        <label>U P P P</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="vertebr">
+                        <label>Vertebroplasty</label>
+                    </td>
+                    <td id = 'checkOption'>
+                        <input  type="checkbox" id="current" name="current" value="wisdom">
+                        <label>Wisdom Teeth Removal</label>
+                    </td>
+                 </tr>
+                 <tr>
+                     <td>
+                        <input  type="checkbox" id="other" name="current" value="otherSurg" onClick ='dynInput(this);'>
+                        <label>Other</label>
+                        
+                    </td>
+                 </tr>
+            </table>
+            <br>
+            <p id="insertinputs"></p>
+            <br><br>
         </div>
 
 
